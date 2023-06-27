@@ -26,6 +26,7 @@ import UseCallback from './components/basic/B14_UseCallback';
 import UseCallback2 from './components/basic/B15_UseCallback2';
 import UseMemo from './components/basic/B16_UseMemo';
 import UseRef from './components/basic/B17_UseRef';
+import Condition1 from './components/basic/B18_ConditionalRendering1';
 
 
 
@@ -102,7 +103,10 @@ function App() {
     //  <UseMemo />
      
     /* B17_UserRef */
-     <UseRef />
+    //  <UseRef />
+
+    /* B18_ConditionalRendering */
+    <Condition1/>
 
 
   );

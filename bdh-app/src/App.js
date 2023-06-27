@@ -9,14 +9,23 @@ import './App.css';
 // import ArrowFunction from './components/demo/ArrowFunction'
 
 
-import Props from './components/basic/B01_Props'
-import PropsDataType from './components/basic/B02_PropsDataType'
-import PropsObj from './components/basic/B03_PropsObj'
-import PropsRequired from './components/basic/B04_PropsRequired'
-import State from './components/basic/B05_State'
-import State2 from'./components/basic/B06_State2'
-import StateLiftingUp from './components/basic/B07_StateLiftingUp'
-import PropsDrilling from './components/basic/B08_PropsDrilling'
+import Props from './components/basic/B01_Props';
+import PropsDataType from './components/basic/B02_PropsDataType';
+import PropsObj from './components/basic/B03_PropsObj';
+import PropsRequired from './components/basic/B04_PropsRequired';
+import State from './components/basic/B05_State';
+import State2 from'./components/basic/B06_State2';
+import State3 from'./components/basic/B07_State3';
+import StateLiftingUp from './components/basic/B08_StateLiftingUp';
+import PropsDrilling from './components/basic/B09_PropsDrilling';
+import UseEffectEx from './components/basic/B10_UseEffect';
+import UseContextEx from './components/basic/B11_UseContext';
+import UseReducer from './components/basic/B12_UserReducer';
+import UseReducer2 from './components/basic/B13_UseReducer2';
+import UseCallback from './components/basic/B14_UseCallback';
+import UseCallback2 from './components/basic/B15_UseCallback2';
+import UseMemo from './components/basic/B16_UseMemo';
+import UseRef from './components/basic/B17_UseRef';
 
 
 
@@ -58,12 +67,44 @@ function App() {
     // <State test={"test string"}/>
 
     /* B06_State2 */
-    <State2 />
+    // <State2 />
 
+    /* B07_State3 */
+    // <State3 />
+
+    /* B08_StateLiftingUp */
     // <StateLiftingUp />
 
+    /* B09_PropsDrilling */
     // <PropsDrilling />
     
+    /* B10_UseEffect */
+    // <UseEffectEx/>
+
+    /* B11_UseContext */
+    //  <UseContextEx/>
+
+
+    /* B12_UserReducer */
+    //  <UseReducer/>
+
+    /* B13_UserReducer2 */
+    //  <UseReducer2/>
+
+
+    /* B14_UseCallback */
+    //  <UseCallback/>
+
+    /* B15_UseCallback2 */
+    //  <UseCallback2/>
+
+    /* B16_UseMemo */
+    //  <UseMemo />
+     
+    /* B17_UserRef */
+     <UseRef />
+
+
   );
 }
 

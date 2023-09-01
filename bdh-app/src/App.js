@@ -28,6 +28,7 @@ import UseMemo from './components/basic/B16_UseMemo';
 import UseRef from './components/basic/B17_UseRef';
 import Condition from './components/basic/B18_ConditionalRendering';
 import UseContext1 from './components/basic/UseContext1';
+import TodoList from './components/basic/TodoList';
 
 
 
@@ -72,7 +73,7 @@ function App() {
       {/* <State2 /> */}
 
       {/* B07_State3 */}
-      {/* <State3 /> */}
+      <State3 />
 
       {/* B08_StateLiftingUp */}
       {/* <StateLiftingUp /> */}
@@ -109,9 +110,11 @@ function App() {
 
 
 
-      <UseContext1></UseContext1>
-      <hr/>
+      {/* <UseContext1></UseContext1> */}
+      {/* <hr/> */}
 
+
+      {/* <TodoList/> */}
 
       
     </>

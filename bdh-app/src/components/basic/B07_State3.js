@@ -31,7 +31,6 @@ const Todo = () => {
     }
 
     
-    
     const InputTodo = () => {
         const [inputText, setInputText] = useState('');
 
@@ -53,6 +52,8 @@ const Todo = () => {
             </div>
         );
     }
+
+
 
 
     // 배열.map((요소, 인덱스) => { return 값; } ) : 배열을 반복 접근하여 리턴되는 값을 이용해 새로운 배열을 만들어 반환

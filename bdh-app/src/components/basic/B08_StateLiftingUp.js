@@ -11,9 +11,9 @@ import React, { useState } from 'react'; // imrs
 // 따라서 React에서는 하위 컴포넌트에서 발생한 이벤트를 
 // 상위 컴포넌트에서 처리하도록 하는 상태 끌어올리기 패턴을 사용합니다.
 
-const Id = ({onChangeId}) => {
+const Id = ({onChangeId, id}) => {
     // onChangeId : 부모로 부터 전달받은 함수(props)
-
+console.log(id);
     return (
         // <> === <React.Fragment>
         // 함수형 컴포넌트는 감싸는 부모 요소가 없으면 오류가 발생하는데
@@ -51,6 +51,7 @@ const StateLiftingUp = () => {
     const [id, setId] = useState(""); // 처음에 빈문자열을 대입
     const [pw, setPw] = useState(""); // 처음에 빈문자열을 대입
 
+    const [check, setCheck] = useState(false);
     
 
     // 부모 컴포넌트(B06_StateLiftingUp)의 상태 변경 함수
@@ -63,15 +64,19 @@ const StateLiftingUp = () => {
         setPw(e.target.value); // pw의 상태값을 Pw 컴포넌트 input 태그에 입력된 값으로 변경
     }
 
+
+    
     return (
         <>
             {/* 부모 컴포넌트의 함수를 자식에게 전달 (props 이용)*/}
-            <Id onChangeId={onChangeIdHandler}/> {/* props 이름 === onChangeId : 자식 컴포넌트 함수 매개변수에 작성 */}
+            <Id onChangeId={onChangeIdHandler} id={id}/> {/* props 이름 === onChangeId : 자식 컴포넌트 함수 매개변수에 작성 */}
             <Pw onChangePw={onChangePwHandler}/>{/* props 이름 === onChangePw : 자식 컴포넌트 함수 매개변수에 작성 */}
 
             <div className="wrapper">
-                <button disabled = {id.length === 0 || pw.length === 0}>Login</button>    
+                <button disabled = {id.length === 0 || pw.length === 0} >Login</button>    
             </div>        
+
+            {id==='user01' && pw==='pass01' ? (<h1>로그인 성공</h1>) : ('') }
         </>
     );
 
